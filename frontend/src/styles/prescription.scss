@@ -1,0 +1,125 @@
+.prescription-page {
+  min-height: calc(100vh - 100px);
+  padding: 2rem 0;
+  
+  .page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    
+    h1 {
+      color: white;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    
+    p {
+      color: rgba(246, 249, 252, 0.9);
+      font-size: 1.1rem;
+    }
+  }
+  
+  .upload-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .results-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .explanation-section {
+    h3 {
+      color: #0A1A2F;
+      font-weight: 600;
+    }
+    
+    .explanation-content {
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 1.5rem;
+      border-left: 4px solid #00D4C9;
+    }
+  }
+  
+  .medicines-section {
+    h3 {
+      color: #0A1A2F;
+      font-weight: 600;
+    }
+  }
+  
+  .medicine-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      border-color: #00D4C9;
+      box-shadow: 0 4px 12px rgba(0, 212, 201, 0.15);
+    }
+    
+    h4 {
+      color: #0A1A2F;
+      font-weight: 600;
+    }
+    
+    .badge {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+  
+  .basic-info-card {
+    border-left: 4px solid #0dcaf0;
+    background: linear-gradient(to right, rgba(13, 202, 240, 0.05), transparent);
+    
+    .alert-info {
+      background: rgba(13, 202, 240, 0.1);
+      border-color: #0dcaf0;
+      color: #055160;
+    }
+  }
+  
+  .info-card {
+    background: white;
+    border-radius: 8px;
+    border: 2px solid #dee2e6;
+    overflow: hidden;
+    
+    &.border-success {
+      border-color: #198754;
+    }
+    
+    &.border-danger {
+      border-color: #dc3545;
+    }
+    
+    .info-card-header {
+      padding: 0.75rem 1rem;
+      background: #f8f9fa;
+      border-bottom: 1px solid #dee2e6;
+    }
+    
+    .info-card-body {
+      padding: 1rem;
+      
+      ul {
+        padding-left: 1.2rem;
+        
+        li {
+          font-size: 0.95rem;
+          color: #495057;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import dotenv from 'dotenv';
+const envPath = path.resolve('.env');
+const raw = fs.readFileSync(envPath);
+const text = raw.toString();
+console.log('raw text:\n', text);
+console.log('raw bytes around GEMINI:', text.split('\n').filter(line => line.includes('GEMINI')));
+const parsed = dotenv.parse(raw);
+console.log(parsed);

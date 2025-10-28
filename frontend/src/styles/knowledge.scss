@@ -1,0 +1,132 @@
+.knowledge-page {
+  min-height: calc(100vh - 56px);
+  padding: 2rem 1rem;
+
+  .page-header {
+    margin-bottom: 2rem;
+
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: rgba(246, 249, 252, 0.8);
+      font-size: 1.1rem;
+    }
+  }
+
+  .search-card {
+    background: #F6F9FC;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+
+    .search-bar {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+
+      .form-control {
+        flex: 1;
+      }
+    }
+  }
+
+  .results-card {
+    background: #F6F9FC;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeInUp 0.5s ease;
+
+    h3 {
+      font-family: 'Poppins', sans-serif;
+      color: #0A1A2F;
+      margin-bottom: 1.5rem;
+    }
+
+    .explanation-section {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      border-left: 4px solid #00D4C9;
+      margin-bottom: 1.5rem;
+
+      h4 {
+        font-family: 'Poppins', sans-serif;
+        color: #0A1A2F;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: #6c757d;
+        line-height: 1.7;
+      }
+
+      ul {
+        padding-left: 1.5rem;
+        
+        li {
+          color: #6c757d;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: #6c757d;
+
+    svg {
+      color: #00D4C9;
+      margin-bottom: 1rem;
+    }
+
+    h4 {
+      font-family: 'Poppins', sans-serif;
+      color: #0A1A2F;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .knowledge-page {
+    padding: 1rem;
+
+    .page-header h1 {
+      font-size: 2rem;
+    }
+
+    .search-card,
+    .results-card {
+      padding: 1.5rem;
+    }
+
+    .search-bar {
+      flex-direction: column;
+      
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
