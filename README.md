@@ -106,7 +106,7 @@ Create `backend/.env` with the following:
 # MongoDB
 MONGODB_URI=mongodb://localhost:27017/mediassist
 # Or use MongoDB Atlas:
-# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/mediassist
+# MONGODB_URI=your_mongoDB_URI
 
 # JWT Secret (use a strong random string)
 JWT_SECRET=your_super_secret_jwt_key_here
