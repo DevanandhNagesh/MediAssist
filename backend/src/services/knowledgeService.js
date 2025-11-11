@@ -226,7 +226,7 @@ export const searchKnowledge = async({ query }) => {
       query,
       term: trimmed,
       isMedical: false,
-      definition: 'Not a medical term—can't explain.',
+      definition: 'Not a medical term—cannot explain.',
       fallbackUsed: false
     };
     knowledgeCache.set(cacheKey, response);
